@@ -1,0 +1,170 @@
+.c-low_message {
+  margin-top: 135px;
+  padding-bottom: 150px;
+  @include tab {
+    margin-top: 85px;
+    padding-bottom: 100px;
+  }
+  @include sp {
+    margin-top: 45px;
+    padding-bottom: 50px;
+  }
+  &_list {
+  }
+
+  &_item {
+    @include pc {
+      display: flex;
+    }
+
+    &:nth-child(1) {
+      position: relative;
+      .c-low_message_item_img {
+        @include pc {
+          position: absolute;
+          top: -57px;
+        }
+      }
+      .c-low_message_item_textArea {
+        padding:60px 63px 165px 238px;
+        margin-left: auto;
+        &_room {
+          @extend .c-low_message_item_textArea;
+          padding:60px 68px 110px 238px;
+          @include tab {
+            padding:60px;
+          }
+          @include sp {
+            padding:30px;
+          }
+        }
+        &_onsen {
+          @extend .c-low_message_item_textArea;
+          padding:60px 127px 165px 238px;
+          @include tab {
+            padding:60px;
+          }
+          @include sp {
+            padding:30px;
+          }
+        }
+        &_cooking {
+          @extend .c-low_message_item_textArea;
+          @include tab {
+            padding:60px;
+          }
+          @include sp {
+            padding:30px;
+          }
+        }
+
+      }
+
+    }
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+      position: relative;
+      .c-low_message_item_img {
+        @include pc {
+          position: absolute;
+          top: -57px;
+        }
+      }
+      .c-low_message_item_textArea {
+        padding:60px 274px 165px 60px;
+        margin-right: auto;
+        &_room {
+          @extend .c-low_message_item_textArea;
+          padding:60px 295px 89px 60px;
+          margin-right: auto;
+          @include tab {
+            padding:60px;
+          }
+          @include sp {
+            padding:30px;
+          }
+        }
+        &_onsen {
+          @extend .c-low_message_item_textArea;
+          padding:60px 209px 165px 60px;
+          margin-right: auto;
+          @include tab {
+            padding:60px;
+          }
+          @include sp {
+            padding:30px;
+          }
+        }
+        &_cooking {
+          @extend .c-low_message_item_textArea;
+          margin-right: auto;
+          @include tab {
+            padding:60px;
+          }
+          @include sp {
+            padding:30px;
+          }
+        }
+      }
+
+    }
+
+    &:nth-child(3) {
+      position: relative;
+      .c-low_message_item_textArea {
+        padding:60px 159px 165px 238px;
+        margin-left: auto;
+        &_room {
+          @extend .c-low_message_item_textArea;
+          padding:60px 81px 131px 238px;
+          @include tab {
+            padding:60px;
+          }
+          @include sp {
+            padding:30px;
+          }
+        }
+        &_cooking {
+          @extend .c-low_message_item_textArea;
+          @include tab {
+            padding:60px;
+          }
+          @include sp {
+            padding:30px;
+          }
+        }
+      }
+
+      .c-low_message_item_img {
+        @include pc {
+          position: absolute;
+          top: -57px;
+        }
+      }
+    }
+
+    &:not(:first-child) {
+      margin-top: 141px;
+      @include tab {
+        margin-top: 60px;
+      }
+    }
+
+    &_img {
+      
+    }
+
+    &_textArea {
+      background:url(../img/bg01.jpg);
+      &_title {
+        @include fz(24,18);
+        & + * {
+          margin-top: 52px;
+          @include tab {
+            margin-top: 32px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.c-button {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  padding:20px 0;
+  @include lh(1);
+  background:$white;
+  @include fz(16,14);
+  text-align: center;
+  border:none;
+  border:1px solid #707070;
+  margin-top: 75px;
+  transition: all .2s;
+  @include tab {
+    margin:30px auto 0 auto;
+  }
+  &:hover {
+    background:$black;
+    color:$white;
+  }
+}
+
+.c-button-header {
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  padding:20px 37px;
+  background:$button_bg;
+  color:$white;
+  border:none;
+  @include lh(1);
+  @include fz(16,14);
+  text-align: center;
+}
+
+.fa-calendar-alt {
+  margin-right: 10px;
+}

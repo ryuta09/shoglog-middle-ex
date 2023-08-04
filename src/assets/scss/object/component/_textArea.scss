@@ -1,0 +1,48 @@
+.c-textArea {
+  @include lh(2,1.5);
+  @include fz(16,14);
+  &-title {
+    @include fz(36,24);
+    @include lh(1.7,1.4);
+  }
+
+  &-large {
+    @extend .c-textArea;
+    @include lh(1.6,1.4);
+    @include fz(20,16);
+    margin-top: 32px;
+    @include tab {
+      margin-top: 20px;
+    }
+  }
+
+  &-about {
+    @extend .c-textArea;
+    margin-top: 75px;
+    @include tab {
+      margin-top: 30px;
+    }
+  }
+
+  &-low {
+    @extend .c-textArea;
+    text-align: center;
+    margin-top: 97px;
+    @include tab {
+      margin-top: 67px;
+    }
+    @include sp {
+      margin-top: 37px;
+    }
+  }
+  &-room {
+    @extend .c-textArea;
+    @include fz(14);
+    margin-top: 52px;
+    @include lh(1.5);
+
+    @include tab {
+      margin-top: 32px;
+    }
+  }
+}

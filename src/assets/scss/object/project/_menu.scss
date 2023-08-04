@@ -1,0 +1,55 @@
+.p-top_menu {
+  padding:64px 0 61px;
+  background:url(../img/menu_bg.png);
+  @include tab {
+    padding:34px 0 31px;
+  }
+  &_list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
+    @include tab {
+      margin-bottom: 66px;
+    }
+    @include sp {
+      margin-bottom: 36px;
+    }
+  }
+
+  &_item {
+    &:not(:first-child) {
+      margin-left: 34px;
+    }
+    a {
+      writing-mode: vertical-rl;
+      @include fz(18,16);
+      letter-spacing: 1em;
+      transition: all .2s;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &_footer {
+    @include fz(16,14);
+    margin-top: 72px;
+    @include tab {
+      margin-top: 42px;
+    }
+    &_item {
+      display: flex;
+      justify-content: center;
+      &:not(:first-child) {
+        margin-top: 23px;
+      }
+      dt {
+
+      }
+
+      dd {
+        margin-left: 21px;
+      }
+    }
+  }
+}

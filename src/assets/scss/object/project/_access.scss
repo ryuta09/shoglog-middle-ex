@@ -1,0 +1,80 @@
+.p-top_access {
+  background: url(../img/bg01.jpg);
+  padding:60px 0 110px;
+  &_item{
+    @include pc {
+      display: flex;
+      max-width: 100%;
+      width: calc(100% + 150px);
+    }
+    margin-top: 84px;
+    &_img {
+      width: 100%;
+      max-width: 656px;
+      @include tab {
+        margin:0 auto;
+        max-width: 100%;
+      }
+     img {
+      height: 100%;
+      @include tab {
+        width: 100%;
+      }
+     }
+    }
+
+    &_textArea {
+      align-self: center;
+      @include pc {
+        margin-left: 83px;
+      }
+
+      @include fz(16,14);
+      position: relative;
+      align-self: center;
+      dl {
+
+        dt {
+          margin-top: 24px;
+          @include sp {
+            margin-top: 12px;
+          }
+        }
+
+        dd {
+          @include lh(2,1.5);
+          margin-top: 24px;
+          @include sp {
+            margin-top: 12px;
+          }
+        }
+
+      }
+
+    }
+
+    &_text {
+      @include lh(2,1.5);
+    }
+  }
+}
+
+
+.access-map {
+  margin: 70px auto 0;
+  width: 792px;
+  max-width: 100%;
+}
+
+.iframe-map {
+  width: 100%;
+  padding-top:592 / 792 * 100%;
+  position: relative;
+  iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+  }
+}

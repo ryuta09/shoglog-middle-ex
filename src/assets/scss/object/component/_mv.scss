@@ -1,0 +1,28 @@
+.c-mv {
+  margin-top: 80px;
+  height: 500px;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  &-cooking {
+    @extend .c-mv;
+    background:url(../img/cooking_bg.jpg) center center no-repeat;
+  }
+  &-room {
+    @extend .c-mv;
+    background:url(../img/room_bg.jpg) center center no-repeat;
+  }
+  &-onsen {
+    @extend .c-mv;
+    background:url(../img/onsen_bg.jpg) center center no-repeat;
+  }
+}
+
+.c-mv_low_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:$white;
+  @include fz(34,26);
+}

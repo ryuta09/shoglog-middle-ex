@@ -1,0 +1,19 @@
+.c-title_area {
+  .c-title {
+    @include fz(36,24);
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 0.18em;
+  }
+
+  img {
+    width: 40px;
+    margin: 0 auto;
+  }
+}
+
+.c-title-header {
+  @include fz(32,26);
+  letter-spacing: 0.18em;
+  color: $black;
+}

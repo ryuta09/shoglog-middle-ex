@@ -1,0 +1,108 @@
+.p-top_news {
+  padding:60px 0;
+
+  &_tag {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+    @include sp {
+      margin-top: 26px;
+    }
+    li {
+      @include fz(16,14);
+      &:not(:first-child) {
+        margin-left: 53px;
+      }
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content:'';
+        position: absolute;
+        bottom:-4px;
+        left:0;
+        width: 100%;
+        height: 2px;
+        background:$black;
+        transform:scale(0, 1);
+        transform-origin: left top;
+        transition:  all .3s;
+      }
+      &:hover {
+        &::after {
+          transform:scale(1,1);
+        }
+      }
+    }
+  }
+
+  &_area {
+    margin-top: 50px;
+    &_list{ 
+      @include pc {
+        display: flex;
+      }
+      flex-wrap: wrap;
+    }
+
+    &_item {
+      display: flex;
+      width: calc(50% - 46px * 1 / 2);
+      @include tab {
+        width: 100%;
+      }
+      &:not(:first-child) {
+        @include pc {
+          margin-left: 46px;
+        }
+        @include tab {
+          margin-top: 15px;
+        }
+      }
+      &:nth-child(2n + 1) {
+        margin-left: 0;
+      }
+      &:nth-child(n + 3) {
+        @include pc {
+          margin-top: 20px;
+        }
+      }
+      padding:15px 0 15px 10px;
+      background:$news_gray;
+      &_img {
+        width: 100%;
+        max-width: 103px;
+      }
+
+      &_textArea {
+        margin-left: 30px;
+        time {
+          @include fz(14);
+        }
+
+        &_text {
+          @include fz(16,14);
+          margin-top: 10px;
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
+
+//タブのCSS
+
+.p-top_news_area {
+  &_list {
+    display: none;
+  }
+  &_list.show {
+    display: block;
+    display: flex;
+  }
+}
+

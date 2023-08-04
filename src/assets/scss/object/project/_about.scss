@@ -1,0 +1,74 @@
+.p-top_about {
+  padding:106px 0 78px;
+  &_list {
+
+  }
+
+  &_item {
+    padding:0 10px;
+    @include pc {
+      display: flex;
+    }
+    @include tab {
+      text-align: center;
+    }
+    &:not(:first-child) {
+      margin-top: 122px;
+      @include tab {
+        margin-top: 61px;
+      }
+    }
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+    &_img {
+      width: 100%;
+      max-width: 1050px;
+      margin-bottom: 20px;
+    }
+    &_textArea {
+      margin-left: 137px;
+      width: 100%;
+      @include tab {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+
+    &:nth-child(1) {
+      .p-top_about_item_textArea {
+        width: 90%;
+        max-width: 432px;
+        @include tab {
+          margin:0 auto;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .p-top_about_item_textArea {
+        margin-left: 0;
+        margin-right: 137px;
+        width: 90%;
+        max-width: 408px;
+        @include tab {
+          margin-right: 0;
+          margin:0 auto;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .p-top_about_item_textArea {
+        width: 90%;
+        max-width: 468px;
+        @include tab {
+          margin:0 auto;
+        }
+      }
+    }
+
+  }
+
+
+}

@@ -1,0 +1,81 @@
+.p-top_message {
+  height: 680px;
+  background:url(../img/bg01.jpg);
+  position: relative;
+  @include tab {
+    height: 600px;
+  }
+  &_textArea {
+    height: 420px;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.5em;
+    @include tab {
+      height: 400px;
+      letter-spacing: 0.4em;
+
+    }
+    &_box {
+      margin-right: 118px;
+      @include tab {
+        margin-right: 50px;
+      }
+      @include sp {
+        margin-right: 20px;
+      }
+    }
+
+    span {
+      @include fz(28,20);
+      display: block;
+      transform: translateY(-85px);
+      letter-spacing: 0.5em;
+      @include tab {
+        transform: translateY(-60px);
+      }
+    }
+
+    &_title {
+      @include fz(28,20);
+      margin-right: 31px;
+      letter-spacing: 0.5em;
+      @include tab {
+        margin-right: 20px;
+      }
+      @include sp {
+        margin-right: 10px;
+      }
+    }
+
+    &_text {
+      @include fz(16,14);
+      @include lh(1.3);
+      text-orientation: upright;
+      &:not(:first-child) {
+        margin-right: 22px;
+        @include tab {
+          margin-right: 10px;
+        }
+
+        @include sp {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &_name {
+    @include fz(22,18);
+    text-align: right;
+    margin:0 118px 30px 0;
+    @include tab {
+      margin-right: 50px;
+    }
+    @include sp {
+      margin:0 20px 55px 0;
+    }
+  }
+}

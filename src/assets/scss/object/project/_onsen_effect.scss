@@ -1,0 +1,53 @@
+.onsen {
+  border-bottom:1px solid $modal_gray;
+}
+
+.p-top_onsen_effect {
+  padding:95px 0 74px;
+  margin-bottom: 96px;
+  border-bottom: 1px solid $modal_gray;
+  @include sp {
+    padding:55px 0 34px;
+    margin-bottom: 66px;
+  }
+  &_title { 
+    text-align: center;
+    @include fz(26,18);
+  }
+
+  &_list {
+    margin-top: 55px;
+  }
+
+  &_item {
+    @include pc {
+      display: flex;
+    }
+    
+    @include fz(15);
+    border-top:1px solid $modal_gray;
+    padding:17px 0;
+    @include sp {
+      padding: 12px 0;
+    }
+    &:last-child {
+      border-bottom: 1px solid $modal_gray;
+    }
+    &_title {
+      width: 100%;
+      max-width: 220px;
+      font-weight: lighter;
+    }
+
+    &_text {
+      width: 100%;
+      max-width: 660px;
+      @include lh(1.4);
+      @include sp {
+        margin-top: 10px;
+      }
+    }
+  }
+
+
+}

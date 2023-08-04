@@ -1,0 +1,65 @@
+.l-mv {
+  position: relative;
+  &_textArea {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-lr;
+
+    &_text {
+      @include fz(34,26);
+      color:$white;
+      font-weight: bold;
+      letter-spacing: 0.3em;
+      &:not(:first-child) {
+        margin-left: 51px;
+        @include sp {
+          margin-left: 31px;
+        }
+      }
+      min-height: 400px;
+      
+      @include sp {
+        min-height: 300px;
+      }
+    }
+  }
+}
+
+#slide_wrap{
+  position: relative;
+  overflow: hidden;
+  
+  .slide_item{
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 2s linear, transform 7.5s linear;  //秒数に注意
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    
+    &:not(:first-child){
+      position: absolute;
+      top: 0;
+      left : 0;
+    }
+  
+    &.show_{
+      opacity: 1;
+    }
+    &.zoom_{
+      transform: scale(1.1);
+    }
+    img{
+      display: block; //下に余白ができないように
+        height: 673px;
+        width: 100%;
+        object-fit: cover;
+        @include tab{ 
+          height: 473px;
+        }
+    }
+  }
+}

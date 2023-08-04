@@ -1,0 +1,83 @@
+<header class="l-header j-header">
+  <div class="l-header_left">
+    <div class="l-header_logo">
+      <div class="l-header_logo_img">
+        <img src="../assets/img/header_logo.svg" alt="">
+      </div>
+      <h1 class="c-title-header l-header_title">石井花壇</h1>
+    </div>
+    <nav class="l-header_nav">
+      <ul class="l-header_nav_inner">
+          <li class="l-header_nav_cmn"><a class="j-header_link" href="#room">お部屋</a></li>
+          <li class="l-header_nav_cmn"><a class="j-header_link" href="#menu">お料理</a></li>
+          <li class="l-header_nav_cmn"><a class="j-header_link" href="#onsen">温泉</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <button class="l-header_btn j-header_btn">
+    <div class="l-header_btn_hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+  <div class="l-header_right">
+    <a class="c-button-header" id="js-modal-open" href="" ><i class="far fa-calendar-alt"></i>宿泊予約</a>
+  </div>
+
+  <div class="modal js-modal">
+    <div class="modal_bg js-modal-close"></div>
+    <div class="modal-content">
+      <div class="js-modal-close">
+        <span></span>
+        <span></span>
+      </div>
+      <form action="">
+        <p>宿泊予約</p>
+        <dl class="modal-form-dl">
+          <div class="modal-form-item">
+            <dt class="modal-form-label">
+              <label for="name">お名前</label>
+            </dt>
+            <dd class="modal-form-input">
+              <input type="text" name="name" id="name"　placeholder="例：石井正悟">
+            </dd>
+          </div>
+          <div class="modal-form-item">
+            <dt class="modal-form-label">
+              <label for="email">メールアドレス</label>
+            </dt>
+            <dd class="modal-form-input">
+              <input type="email" name="email" id="email" placeholder="例：Example@example.com">
+            </dd>
+          </div>
+          <div class="modal-form-item">
+            <dt class="modal-form-label">
+              <label>ご希望プラン（空いているプランのみ表示されます）</label>
+            </dt>
+            <dd class="modal-form-input">
+              <select>
+                <option value="/">プランを選択してください</option>
+                <option value="plan1">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                <option value="plan2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                <option value="plan3">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+              </select>
+            </dd>
+          </div>
+          <div class="modal-form-item">
+            <dt class="modal-form-label">
+              <label for="flatpickr">日時選択</label>
+            </dt>
+            <dd class="modal-form-input">
+              <input type="text" id="flatpickr" placeholder="日時を選択してください"　readonly="readonly">
+            </dd>
+          </div>
+        </dl>
+        <a href="" class="modal-form-btn">送信する</a>
+      </form>
+    </div>
+  </div>
+  
+</header>

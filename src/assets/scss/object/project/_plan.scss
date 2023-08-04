@@ -1,0 +1,43 @@
+.p-top_plan {
+  padding:60px 0 144px;
+  background:url(../img/plan_bg.jpg);
+  @include tab {
+    padding:40px 0 100px;
+  }
+  &_list {
+    @include pc {
+      display: flex;
+    }
+    margin-top: 66px;
+    @include tab {
+      margin-top: 30px;
+    }
+  }
+
+  &_item {
+    width: calc(33.333% - 96px * 2 / 3);
+    &:not(:first-child) {
+      margin-left: 96px;
+      @include tab {
+        margin-left: 0;
+        margin: 20px auto 0;
+      }
+    }
+    @include tab {
+      width: 95%;
+      margin:0 auto;
+    }
+    img {
+
+    }
+
+    &_text {
+      margin-top: 36px;
+      @include tab {
+        margin-top: 20px;
+      }
+    }
+
+  }
+}
+

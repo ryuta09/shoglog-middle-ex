@@ -1,0 +1,11 @@
+.l-footer {
+  height: 60px;
+  background:$black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .copyright {
+    color:$white;
+    @include fz(12);
+  }
+}
